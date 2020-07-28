@@ -1,0 +1,32 @@
+jobs:
+  - script: |
+      pipelineJob("demo01") {
+          definition {
+              cpsScm{
+                  scm{
+                      git {
+                          remote{
+                              name('origin')
+                              url('https://github.com/RicoToothless/coscup-jenkins-demo-library.git')
+                          }
+                      }
+                  }
+                  scriptPath("testjobs/demo01_Jenkinsfile.groovy")
+              }
+          }
+      }
+      pipelineJob("demo02") {
+          definition {
+              cpsScm{
+                  scm{
+                      git {
+                          remote{
+                              name('origin')
+                              url('https://github.com/RicoToothless/coscup-jenkins-demo-library.git')
+                          }
+                      }
+                  }
+                  scriptPath("testjobs/demo02_Jenkinsfile.groovy")
+              }
+          }
+      }
