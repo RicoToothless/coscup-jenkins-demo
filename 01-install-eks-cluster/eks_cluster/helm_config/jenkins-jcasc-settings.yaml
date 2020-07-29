@@ -1,3 +1,12 @@
+unclassified:
+  globalLibraries:
+    libraries:
+      - name: "jenkins-library"
+        retriever:
+          modernSCM:
+            scm:
+              git:
+                remote: "https://github.com/RicoToothless/coscup-jenkins-demo-library.git"
 jobs:
   - script: |
       pipelineJob("demo01") {

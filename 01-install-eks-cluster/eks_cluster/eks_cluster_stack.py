@@ -72,14 +72,13 @@ class EksClusterStack(core.Stack):
                     },
                     'JCasC': {'enabled': True,
                         'configScripts': {
-                            'unclassified-settings': read_helm_config('eks_cluster/helm_config/jenkins-jcasc-unclassified-settings.yaml'),
-                            'jobs': read_helm_config('eks_cluster/helm_config/jenkins-jcasc-jobs-settings.yaml')
+                            'settings': read_helm_config('eks_cluster/helm_config/jenkins-jcasc-settings.yaml')
                         }
                     }
                 }
             }
         )
-        
+
         eks.HelmChart(
             self, 'kube-ops-view',
             release='kube-ops-view',
