@@ -47,4 +47,11 @@ Clean up all of the resources.
 
 ```
 $ cd ../uninstall/ && bash uninstall.sh
+
 ```
+
+# COSCUP2020 Record
+* Slide : [Dynamic Jenkins Agent on Kubernetes X Slide](https://docs.google.com/presentation/d/1Kh3GZRYhioeGA8DFo4f4YM3aDQseM4UtTCfw_os4osc/edit#slide=id.p)
+
+* Youtube : [Dynamic Jenkins Agent on Kubernetes X COSCUP Youtube Channel](https://www.youtube.com/watch?v=suh5BbPpwVE)
+
